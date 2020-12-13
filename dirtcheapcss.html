@@ -22,6 +22,9 @@
 				font: 1.4ch ui-monospace, fixed;
 				opacity: 0.6;
 			}
+			img {
+				max-width: 100%;
+			}
 			@media (prefers-color-scheme: dark) {
 				html,a:link {
 					color: #ddd;
@@ -39,7 +42,7 @@
 			<p>
 				I needed something to quickly stylize a simple HTML page
 				into a readable document that looked mostly good on all
-				devices. It weighs in at 348b and that's without any code
+				devices. It weighs in at 374b and that's without any code
 				minification. And this is what it looks like:
 			</p>
 
@@ -59,6 +62,9 @@
 					code,pre {
 						font: 1.4ch ui-monospace, fixed;
 						opacity: 0.6;
+					}
+					img {
+						max-width: 100%;
 					}
 					@media (prefers-color-scheme: dark) {
 						html,a:link {
@@ -127,6 +133,17 @@
 				SF Mono.
 				<a href="https://github.com/highlightjs/highlight.js">Highlight.js</a>
 				could be used as an add-on if the document is very code-heavy.
+			</p>
+
+			<h3>Images 🌄</h3>
+			<p>
+				The only issue with images in a reduced-width layout such as this
+				To address this, a simple <code>max-width: 100%</code> will scale
+				images to width of this container.
+			</p>
+			<p>
+				Example:
+				<img src="sample.jpg" alt="[Sample image]" />
 			</p>
 
 			<h2>Future Considerations 🚀</h2>
