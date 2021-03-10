@@ -6,12 +6,18 @@ I needed something to quickly stylize a simple HTML page into a readable documen
 
 ## How to use
 
-The easiest approach is to append the inline style to your `<head>` section of your HTML document.
+The easiest approach is to append the inline style to your `<head>` section of your HTML document. You can also include the .css file if you prefer.
 
 ### HTML inline
 
 ```html
 <style> html { color-scheme: light dark; color: #333; font: 300 2.2ch/1.5 ui-sans-serif, sans-serif; max-width: 70ch; padding: 1ch; margin: auto; } h2,h3,h4,h5,h6 { margin-top: 3ch; } code,pre { font: 1.4ch ui-monospace, fixed; opacity: 0.7; overflow-x: auto; } img { max-width: 100%; } @media (prefers-color-scheme: dark) { html,a:link { color: #ddd; } a:visited { color: #999; } } </style>
+```
+
+### CSS file
+
+```html
+<link rel="stylesheet" href="dirtcheap.css" />
 ```
 
 ## Example
